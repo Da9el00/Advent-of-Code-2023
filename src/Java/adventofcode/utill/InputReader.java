@@ -24,6 +24,5 @@ public class InputReader {
         } catch (IOException | URISyntaxException e) {
             throw new RuntimeException(e);
         }
-
     }
 }

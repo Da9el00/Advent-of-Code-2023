@@ -1,10 +1,6 @@
 package adventofcode.day1;
 
 import adventofcode.utill.InputReader;
-import adventofcode.utill.Timer;
-
-import java.time.Duration;
-import java.time.Instant;
 import java.util.List;
 
 
@@ -32,7 +28,7 @@ public class Day1Part1 {
     }
 
     public void findResult(){
-        List<String> input = InputReader.readInputByLine("adventofcode/day1/input.tcv", this.getClass());
+        List<String> input = InputReader.readInputByLine("adventofcode/day1/input.txt", this.getClass());
 
         int result = input.stream().map(this::findCalibrationValue).map(Integer::parseInt).reduce(0, Integer::sum);
 
