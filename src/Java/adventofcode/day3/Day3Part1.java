@@ -5,9 +5,7 @@ import adventofcode.utill.InputReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Day3Part1 {
-
     private List<Integer> findValue(List<String> schematic){
         List<Integer> values = new ArrayList<>();
         int index = 0;
@@ -58,26 +56,23 @@ public class Day3Part1 {
                 }
             }
         }
-
         return false;
     }
 
-    protected boolean isSpecial(char value){
+    private boolean isSpecial(char value){
         return !Character.isDigit(value) && value != '.';
     }
 
     public void findResult(){
         List<String> input = InputReader.readInputByLine("adventofcode/day3/input.txt", this.getClass());
 
-        System.out.println(findValue(input).stream().reduce(0, Integer::sum));
+        int result = findValue(input).stream().reduce(0, Integer::sum);
 
-        System.out.println("Result of day 3 part 1: " + "result");
+        System.out.println("Result of day 3 part 1: " + result);
     }
 
     public static void main(String[] args) {
         Day3Part1 day3Part1 = new Day3Part1();
-
         day3Part1.findResult();
     }
-
 }
