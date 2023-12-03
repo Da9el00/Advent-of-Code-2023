@@ -36,7 +36,7 @@ public class Day2Part1 {
                 .map(record -> Integer.parseInt(record.split(":")[0]
                 .split(" ")[1]))
                 .reduce(0, Integer::sum);
-        System.out.println("Result of day 1 part 1: " + result);
+        System.out.println("Result of day 2 part 1: " + result);
     }
 
     public static void main(String[] args) {
