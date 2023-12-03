@@ -5,6 +5,9 @@ import adventofcode.utill.InputReader;
 import java.util.List;
 
 public class Day2Part2 {
+
+    //     "Game 1: 3 blue, 4 red; 1 red, 22 green, 6 blue; 2 green"
+
     public int findMaxValuesForRecord(String record) {
         int maxRed = 0;
         int maxBlue = 0;
