@@ -12,6 +12,6 @@ public class Timer {
 
         // Calculate and print the elapsed time
         Duration elapsedTime = Duration.between(startTime, endTime);
-        System.out.println("Elapsed time: " + elapsedTime.toMillis() + " milliseconds");
+        System.out.println("Elapsed time: " + elapsedTime.toMillis() / 1000 + " seconds");
     }
 }
