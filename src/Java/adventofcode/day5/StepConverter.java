@@ -7,7 +7,6 @@ public class StepConverter {
 
     private final List<List<Long>> rules = new ArrayList<>();
 
-
     public void addRule(List<Long> rule){
         rules.add(rule);
     }

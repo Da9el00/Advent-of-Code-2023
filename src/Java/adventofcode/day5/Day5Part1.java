@@ -15,7 +15,7 @@ public class Day5Part1 {
         String input = InputReader.readInputAsString("adventofcode/day5/input.txt", this.getClass());
 
         //Use "\\n\\n" on linux and "\\r\\n" on windows
-        List<String> inputSections = List.of(input.split("\\r?\\n\\r?\\n")); //Linux: \\n\\n
+        List<String> inputSections = List.of(input.split("\\r?\\n\\r?\\n"));
 
         //Seeds
         seeds = Arrays.stream(inputSections.get(0).split(":")[1].trim().split(" "))
@@ -47,8 +47,6 @@ public class Day5Part1 {
 
         //-1 is returned if no data is present
         long result = seeds.stream().map(this::performSteps).min(Long::compareTo).orElse(-1L);
-//        List<Long> result = seeds.stream().map(this::performSteps).toList();
-
 
         System.out.println("Result of day 5 part 1: " + result);
     }

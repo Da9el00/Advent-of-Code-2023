@@ -16,7 +16,7 @@ public class Day5Part2 {
         String input = InputReader.readInputAsString("adventofcode/day5/input.txt", this.getClass());
 
         //Use "\\n\\n" on linux and "\\r\\n" on windows
-        List<String> inputSections = List.of(input.split("\\r?\\n\\r?\\n")); //Linux: \\n\\n
+        List<String> inputSections = List.of(input.split("\\r?\\n\\r?\\n"));
 
         //Seeds
         seeds = Arrays.stream(inputSections.get(0).split(":")[1].trim().split(" "))
@@ -44,7 +44,6 @@ public class Day5Part2 {
     }
 
     long jump = 10000000;
-        //4501055
 
     public void findResult(){
         setupSeedStepData();
