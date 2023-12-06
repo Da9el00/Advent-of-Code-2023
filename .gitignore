@@ -3,7 +3,6 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea
-AdventOfCode2023.iml
 
 ### Eclipse ###
 .apt_generated
