@@ -4,6 +4,8 @@ out/
 !**/src/test/**/out/
 .idea
 
+src/resources/adventofcode/**/*.txt
+
 ### Eclipse ###
 .apt_generated
 .classpath
