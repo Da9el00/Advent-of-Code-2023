@@ -22,7 +22,7 @@ public class Day9Part1 {
         ArrayList<ArrayList<Integer>> result = findReportValues(nextValues, valueAdder);
         if(result.size() >= 1){
             List<Integer> lastValues = getLastElement(result);
-            valueAdder.addValues(reportValues, lastValues);
+            valueAdder.addNewReportData(reportValues, lastValues);
         }
         result.add(reportValues);
 
@@ -66,5 +66,5 @@ public class Day9Part1 {
 }
 
 interface ValueAdder {
-    void addValues(ArrayList<Integer> reportValues, List<Integer> lastValues);
+    void addNewReportData(ArrayList<Integer> reportValues, List<Integer> lastValues);
 }
